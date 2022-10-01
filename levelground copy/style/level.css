@@ -1,0 +1,395 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+
+
+  /* margins */
+
+body,
+header ul{
+    margin:0;
+}
+
+.baby div{
+    margin: 0% 15% 0% 8%;
+}
+.why div{
+    margin: 6% 26%;
+}
+.big div{
+    margin: 9% 8%;
+}
+
+.medium div{
+    margin: 9% 25%;
+}
+li{
+    margin: 2% 3%;
+    display:flex;
+}
+
+/* background colors */
+.grit,
+header {
+    background: rgba(102,118,137,1);
+}
+.big {
+    background: rgba(219,223,226,1);
+}
+footer{
+    background: rgba(22,31,41,1);
+}
+
+/* navigation links */
+li{
+    float: left;
+}
+#cheeseburger{
+    display: none;
+}
+
+
+/* headings */
+.big h1{
+    font-family: Roboto, Helvetica;
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 45px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+/* font */
+header,
+section,
+footer{
+    font-family: Roboto, Helvetica, sans-serif;
+    text-align: center;
+}
+.why,
+.big,
+.medium{
+    color:black;
+}
+header,
+footer{
+    color:white;
+}
+
+/* paragraph sizes */
+.grit p{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+     margin-left: 4%;
+}
+.grit h2{
+    margin-left: 4%;
+}
+.why p,
+.medium p{
+    font-size:18px;
+    width: 100%;
+}
+.why h3,
+.medium h3{
+    text-transform: uppercase;
+}
+
+.big p{
+    font-size:15px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    width: 100%;
+
+}
+
+
+/* buttons */
+.big button{
+    border:1px solid gray;
+    height: 40px;
+    width: 100px;
+    background: rgba(220,223,226,1);
+    font-family: Roboto, Helvetica;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.medium button{
+    border:1px solid gray;
+    height: 40px;
+    width: 100px;
+    background: white;
+    font-family: Roboto, Helvetica;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.dono {
+    margin-left: 30%;
+    border-radius: 5px;
+    background: white;
+    text-transform: uppercase;
+    color: rgba(102,118,137,1);
+    font-family: Roboto, Helvetica;
+    font-size: 10px;
+    font-weight: bolder;
+    height: 26px;
+    width: 54px;
+    border: none;
+}
+
+
+.big{
+    display: flex;
+
+}
+.gym{
+    float: left;
+}
+.big img{
+    width:100%;
+}
+.visit{
+    float:right;
+
+}
+.vidicon{
+    width: 7%;
+    float:left;
+    margin-left: 40%;
+} 
+p.watch{
+    margin-right: 30%;
+    margin-top: 4%;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+/******************************************
+  /* LAYOUT
+  /*******************************************/
+header,footer{
+    height: 135px;
+    clear: both;
+
+}
+section{
+    width: 100%;
+    float: left;
+}
+.baby{
+    height: 365px;
+}
+.big{
+    height: 530px;
+}
+.medium{
+    height: 440px;
+}
+.logo{
+    width:5%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  @media screen and (max-width:979px) {
+    .grit h2{
+        font-size: 30px;
+    }
+  
+}
+@media screen and (max-width:844px) {
+    header li,
+    .why,
+    .logo,
+    .dono{
+        display: none;
+    }
+    #cheeseburger{
+        display:block;
+        top:2%;
+        color: lightgray;
+        background: rgba(102,118,137,1);
+        font-size: 30px;
+    }
+    header{
+        height: 90px;
+    }
+    
+}
+
+  @media screen and (max-width:769px) {
+
+header,
+section,
+footer {
+    font-size:0.95em;
+}
+
+.why,
+.medium p {
+    display: none;
+}
+.medium div{
+    margin: 20% 35%;
+}
+
+  }
+@media screen and (max-width:728px) {
+    p.watch{
+        font-size: 15px;
+    }
+    .grit h2{
+        font-size: 30px;
+        width: 100%;
+
+    }
+    .grit{
+        height: 300px;
+    }
+    .big{
+        display: block;
+    }
+    .big div{
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    .gym,
+    .visit{
+        float: none;
+    }
+    .big img{
+        display: none;
+    }
+}
+@media screen and (max-width:769px) {
+    .medium{
+        height: 250px;
+    }
+    .medium div{
+        margin: 11% 25%;
+    }
+    .medium h3{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:646px) {
+    p.lg{
+        display:none;
+    }
+    .grit{
+        height:200px;
+    }
+    .grit h2{
+        font-size: 25px;
+        width: 100%;
+    }
+}
+@media screen and (max-width:684px) {
+    .grit h2{
+    font-size: 28px;
+    width: 100%;
+}
+}
+@media screen and (max-width:612px) {
+    .medium h3{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:606px) {
+    .grit h2{
+    font-size: 25px;
+    width: 100%;
+}
+    p.watch{
+    font-size: 13px;
+    }
+    .grit{
+        height:200px;
+    }
+    .big p{
+        display: none;
+    }
+    .big{
+        height: 240px;
+    }
+    .medium{
+        height:200px;
+    }
+
+}
+@media screen and (max-width:537px) {
+    .grit h2{
+    font-size: 20px;
+    width: 100%;
+    }
+    p.watch{
+        font-size: 10px;
+    }
+
+    .grit{
+        height:150px;
+    }
+}
+
+@media screen and (max-width:465px) { 
+
+    .big{
+        height:240px;
+    }
+    .medium{
+        height: 220px;
+    }
+}
+
+@media screen and (max-width:425px) { 
+    .medium{
+        height: 200px;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    header li,
+    .why{
+        display: none;
+    }
+    #cheeseburger{
+        display:block;
+    }
+    .lg,
+    .big p,
+    .medium p{
+        display: none;
+    }
+}
+
